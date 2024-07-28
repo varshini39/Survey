@@ -1,0 +1,180 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrapper {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+.main-header h1 {
+    color: #0056b3;
+    text-align: center;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.start-btn, .submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.start-btn:hover, .submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Input styles */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0056b3;
+    border-radius: 4px;
+}
+
+.survey-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title, .description, .category-desc {
+    margin-bottom: 20px;
+}
+
+.question-container {
+    margin: 20px 0;
+}
+
+.nav-btn, .submit-btn {
+    margin: 10px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-btn:hover, .submit-btn:hover {
+    background-color: #0056b3;
+}
+
+#questionForm {
+    display: grid;
+    place-content: center;
+    text-align: left;
+}
+
+.option-label {
+    margin-bottom: 5px; /* Reduces the gap between options */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.survey-form {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically, if needed */
+    gap: 10px; /* Add space between elements */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.input-field {
+    width: 80%; /* Control the width of input and button */
+    padding: 10px; /* Add padding for better touch area */
+    font-size: 1rem; /* Ensure text is adequately sized */
+}
+
+.survey-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.survey-btn:hover {
+    background-color: #45a049;
+}
+
+#rankTable {
+    margin: 0 auto;  /* Automatically adjust margins to center the table */
+    width: 80%;      /* Adjust width as necessary */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* This will center all child elements */
+    width: 100%;          /* Ensure the wrapper takes full width */
+}
+
+#statsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.categoryDiv {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.categoryHeader {
+    font-size: 1.2em;    /* Slightly larger text for headers */
+    margin-bottom: 10px; /* Space between header and answers */
+}
+
+.answer {
+    padding-left: 20px;  /* Indent answers for better readability */
+}
+
+.categoryHeader, .answer {
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 10px;
+    }
+
+    input[type="text"], .start-btn, .submit-btn {
+        width: 100%;
+    }
+
+    .input-field, .survey-btn {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header h1 {
+        font-size: 20px;
+    }
+}

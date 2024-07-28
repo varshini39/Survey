@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/survey.js" defer></script>
+</head>
+<body>
+<div class="survey-container">
+    <h1 id="surveyTitle" class="title"></h1>
+    <p id="surveyDescription" class="description"></p>
+    <p id="categoryDescription" class="category-desc"></p>
+
+    <div id="questionContainer" class="question-container"></div>
+
+    <button id="prevBtn" class="nav-btn" onclick="prevQuestion();">Prev</button>
+    <button id="nextBtn" class="nav-btn" onclick="nextQuestion();">Next</button>
+    <button id="submitBtn" class="submit-btn" onclick="submitSurvey();">Submit Survey</button>
+</div>
+</body>
+</html>
